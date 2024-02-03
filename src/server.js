@@ -1,21 +1,18 @@
 require('express-async-errors');
 require('dotenv/config');
 
-// TODO: import migrations
 const AppError = require('./utils/AppError');
-// TODO: import upload config
+const upload = require('./configs/upload');
 
 const cors = require('cors');
 const express = require('express');
 const routes = require('./routes');
 
-// TODO: run migrations
-
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// TODO: use upload config
+app.use('/files', express.static(upload.UPLOADS_FOLDER));
 
 app.use(routes);
 
