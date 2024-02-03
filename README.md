@@ -1,0 +1,12 @@
+# Packages used:
+- express
+- nodemon
+- express-async-errors
+- knex
+- sqlite
+- sqlite3
+- jsonwebtoken
+- multer
+- bcryptjs
+- cors
+- dotenv
