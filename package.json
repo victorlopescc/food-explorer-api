@@ -4,8 +4,9 @@
   "description": "api for food-explorer app to search for food",
   "main": "index.js",
   "scripts": {
-    "start": "npm start",
-    "dev": "nodemon ./src/server.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "nodemon ./src/server.js",
+    "migrate": "knex migrate:latest"
   },
   "author": "Victor Lopes",
   "license": "MIT",
