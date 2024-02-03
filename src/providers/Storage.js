@@ -19,7 +19,7 @@ class Storage {
         try {
             await fs.promises.stat(filePath);
         } catch {
-            return new AppError('File not found', 404);
+            return new AppError('Arquivo não encontrado', 404);
         }
 
         await fs.promises.unlink(filePath);
