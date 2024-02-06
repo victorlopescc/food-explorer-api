@@ -89,7 +89,7 @@ class DishesController {
 
 
 
-            const ingredientsData = JSON.parse(ingredients || '[]').map((name) => {
+            const ingredientsData = ingredients.map((name) => {
                 return {
                     dish_id: id,
                     name,
