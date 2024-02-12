@@ -65,7 +65,7 @@ $ git clone https://github.com/victorlopescc/food-explorer-api
 2. Acesse a pasta do projeto:
 
 ```
-$ cd food-explorer-backend
+$ cd food-explorer-api
 ```
 
 3. Instale as dependências:
